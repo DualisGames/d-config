@@ -1,7 +1,9 @@
 package games.dualis.dconfig;
 
+import com.google.inject.ImplementedBy;
 import org.codejargon.fluentjdbc.api.FluentJdbc;
 
+@ImplementedBy(DConfigPlugin.class)
 public interface DConfig {
 
     /**

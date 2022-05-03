@@ -17,11 +17,11 @@ repositories {
 }
 
 dependencies {
-
+    implementation("org.codejargon", "fluentjdbc", "1.8.3")
 }
 
 //<editor-fold desc="API">
-val API = true
+val API = false
 sourceSets {
     val main by sourceSets
 
