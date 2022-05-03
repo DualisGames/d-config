@@ -26,10 +26,13 @@ sourceSets {
     val main by sourceSets
 
     if(!API) return@sourceSets
-    create("api") {
+    val apiSourceSet = create("api") {
         compileClasspath += main.compileClasspath
         runtimeClasspath += main.runtimeClasspath
     }
+
+    main.compileClasspath += apiSourceSet.output
+    main.runtimeClasspath += apiSourceSet.output
 }
 //</editor-fold>
 
