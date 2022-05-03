@@ -1,3 +1,1 @@
-
-rootProject.name = "dualis-plugin-template"
-
+rootProject.name = "d-config"

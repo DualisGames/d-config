@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-
+    implementation("org.codejargon", "fluentjdbc", "1.3.4")
 }
 
 //<editor-fold desc="API">
@@ -55,14 +55,15 @@ sponge {
         name(PluginLoaders.JAVA_PLAIN)
         version("1.0")
     }
-    plugin("example") {
-        displayName("Example")
-        entrypoint("org.spongepowered.example.Example")
-        description("Just testing things...")
+    plugin("d-config") {
+        displayName("D-Config")
+        entrypoint("games.dualis.dconfig.DConfigPlugin")
+        description("A plugin that centralizes some configuration for our libraries.")
         links {
-            homepage("https://spongepowered.org")
+            homepage("https://dualis.games")
+            source("https://github.com/DualisGames/d-config")
         }
-        contributor("Spongie") {
+        contributor("Shyrogan") {
             description("Lead Developer")
         }
         dependency("spongeapi") {
